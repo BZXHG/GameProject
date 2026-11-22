@@ -468,7 +468,7 @@ function createRamSkull() {
   const height = 0.262 * SKULL_SCALE;
   const depth = 0.3802 * SKULL_SCALE;
 
-  loadCharacter('/assets/models/goat_head_v01.glb').then((bound) => {
+  loadCharacter(asset('models/goat_head_v01.glb')).then((bound) => {
     if (group.userData.disposed) {
       disposeCharacter(bound);
       return;
